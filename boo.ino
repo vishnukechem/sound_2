@@ -18,13 +18,13 @@
 #define AUDIO_BUFFER_SIZE (I2S_CHANNEL_NUM * I2S_SAMPLE_RATE * I2S_SAMPLE_BITS / 8 * RECORD_TIME)
 #define HEADER_SIZE       44
 
-const char* ssid = "Gradhomes";
-const char* password = "Gradhomes@2024";
-const char* presigned_url = "https://sound1624.s3.amazonaws.com/audio_file_1740639878690.wav?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW3MD6NM2UL3D3767%2F20250227%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250227T070438Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6c8c88de7ce05801d63eb6f3890cdd7cc56cf5eb4dee97a61ab09d9a3bc136c7";
+const char* ssid = "Vishnu";
+const char* password = "vishnu@vishnu";
+const char* presigned_url = "https://sound1624.s3.amazonaws.com/audio_file_1743078149321.wav?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW3MD6NM2UL3D3767%2F20250327%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20250327T122229Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=99bce55d2a34fa455351634425946f36d3244139854feaf4859348b4046580cd";
 
 #define GITHUB_USER "vishnukechem"
 #define GITHUB_REPO "sound_2"
-#define CURRENT_VERSION "v1.1"
+#define CURRENT_VERSION "v1.2"
 
 unsigned long lastCheckTime = 0;
 const unsigned long updateInterval = 1 * 60 * 1000;
@@ -101,7 +101,7 @@ void checkForUpdates() {
         Serial.println("🚀 New version found! Updating...");
         updateFirmware(latestVersion);
     } else {
-        Serial.println("✔ Already up to date (Version: " CURRENT_VERSION ")");
+        Serial.println("✔ Already up to date by sound1624  (Version: " CURRENT_VERSION ")");
     }
 }
 
